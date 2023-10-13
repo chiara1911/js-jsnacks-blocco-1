@@ -35,13 +35,16 @@ btn.addEventListener('click', function () {
     for (let i = 0; i <= fruits.length; i++) {
         
         if (fruits[i] === 'cocomero') {
-            text = 'trovata';
+            flag = true;
+           
         }        
         
     }
 
     if (flag === false){
         text = 'vai a comprarla';
+    } else {
+      text = 'trovata';
     }
     
    anguria.innerHTML = text;
