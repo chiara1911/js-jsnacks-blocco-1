@@ -27,24 +27,27 @@ const fruits = [
 fruits.push('pesca');
 console.log(fruits);
 const btn = document.querySelector('button');
-const inputEl = document.getElementById('frutta');
+const inputEl = document.getElementById('frutta').value;
 const macedonia = document.getElementById('frigo');
 let flag = '';
 btn.addEventListener('click', function () {
-    for (let i = 0; i <= fruits.length; i++) {
-        
-        if (fruits['cocomero'] === true) {
+    
+    for (let i = 0; i <= fruits; i++) {
+        let presente = fruits.indexOf['cocomero'];
+        if (presente === true) {
             flag = true;
         } else {
             flag = false;
         }
+        macedonia.innerHTML = presente;
+    console.log(presente);
     }
-
-    macedonia.innerHTML = flag;
-    console.log(flag);
+    
+   
+    
 
 })
-
+;
 
 
 
