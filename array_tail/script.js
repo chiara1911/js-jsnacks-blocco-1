@@ -16,7 +16,7 @@ const numeriRandom =[
 
 const btn = document.querySelector('button');
 const lotto = document.getElementById('lotto');
-lotto.
+
 console.log(lotto);
 btn.addEventListener('click',function(){
     const number = document.getElementById('number').value;
