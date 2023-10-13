@@ -25,25 +25,27 @@ const fruits = [
 ];
 
 fruits.push('pesca');
-console.log(fruits);
+// console.log(fruits);
 const btn = document.querySelector('button');
 const inputEl = document.getElementById('frutta').value;
-const macedonia = document.getElementById('frigo');
-let flag = '';
+const anguria = document.getElementById('frigo');
+let flag = false;
 btn.addEventListener('click', function () {
     
-    for (let i = 0; i <= fruits; i++) {
-        let presente = fruits.indexOf['cocomero'];
-        if (presente === true) {
-            flag = true;
-        } else {
-            flag = false;
-        }
-        macedonia.innerHTML = presente;
-    console.log(presente);
+    for (let i = 0; i <= fruits.length; i++) {
+        
+        if (fruits[i] === 'cocomero') {
+            text = 'trovata';
+        }        
+        
+    }
+
+    if (flag === false){
+        text = 'vai a comprarla';
     }
     
-   
+   anguria.innerHTML = text;
+    console.log(text);
     
 
 })
