@@ -10,20 +10,38 @@
 
 // 1. chiedere quanti elementi
 // 2. in base a quanti sono, metterli nella lista numeri random da 1 a 100
-const numeriRandom =[
-''
-];
+
 
 const btn = document.querySelector('button');
 const lotto = document.getElementById('lotto');
 
+
+console.log(number);
 console.log(lotto);
+
+
+
 btn.addEventListener('click',function(){
-    const number = document.getElementById('number').value;
-    numeriRandom.splice(number * lotto,);
-    console.log(number);
+    const number = parseInt(document.getElementById('number').value);
+//    let number = parseInt(number);
+   const numeriRandom =[
+    ''
+    ];
+   
+    for(i = 0; i < number; i++){
+
+       numeriRandom.push(getRndInteger( 1, 101));
+    
+        console.log(numeriRandom);
+    };
     
 })
-console.log(numeriRandom);
+
 
 console.log(btn);
+
+
+// utility
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
