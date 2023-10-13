@@ -13,33 +13,32 @@
 
 
 const btn = document.querySelector('button');
-const lotto = document.getElementById('lotto');
 
 
-console.log(number);
-console.log(lotto);
-
-
-
-btn.addEventListener('click',function(){
+btn.addEventListener('click', function () {
     const number = parseInt(document.getElementById('number').value);
-//    let number = parseInt(number);
-   const numeriRandom =[
-    ''
-    ];
-   
-    for(i = 0; i < number; i++){
+    const numeriRandom = [];
+    
 
-       numeriRandom.push(getRndInteger( 1, 101));
-    
-        console.log(numeriRandom);
+    for (let i = 0; i < number; i++) {
+        numeriRandom.push(getRndInteger(1, 101));
+        // console.log(numeriRandom);
     };
-    
+
+    console.log(numeriRandom);
+
+    let lastNumber = [
+        (numeriRandom[numeriRandom.length - 5]),
+        (numeriRandom[numeriRandom.length - 4]),
+        (numeriRandom[numeriRandom.length - 3]),
+        (numeriRandom[numeriRandom.length - 2]),
+        (numeriRandom[numeriRandom.length - 1]),
+    ];
+    console.log(lastNumber);
+
 })
 
-
-console.log(btn);
-
+// console.log(btn);
 
 // utility
 function getRndInteger(min, max) {
