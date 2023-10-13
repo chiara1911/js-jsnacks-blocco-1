@@ -42,9 +42,9 @@ btn.addEventListener('click', function () {
     }
 
     if (flag === false){
-        text = 'vai a comprarla';
+        text = 'Oh no, devo uscire a comprare il cocomero!';
     } else {
-      text = 'trovata';
+      text = 'Trovato! Devo solo preparare il cocktail.';
     }
     
    anguria.innerHTML = text;
